@@ -1,0 +1,10 @@
+Plain English: Sort last names in ascending order
+
+From a list of last names, sort by value from smallest (A) to largest (Z).
+If more than one item begins with A, sort items beginning with A by the value of each item's second letter from smallest (A) to largest (Z).
+
+Continue sorting items beginning with A until no further items begin with A. 
+
+Move on to B, applying the same logic. 
+
+Continue through the rest of the alphabet, until all names are sorted.
