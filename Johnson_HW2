@@ -131,8 +131,8 @@ list1 = [3, 6, 9, 12]
 list2 = [2, 4, 6, 8, 10, 12]
 
 def overlapping(list1,list2):
-    for chr in x:
-        if chr == y:
+    for element in list1:
+        if element in list2:
             return True
     else:
         return False
