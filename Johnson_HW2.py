@@ -1,3 +1,5 @@
+## Need to write doc string headers for all your functions.
+
 """Exercise 2.1"""
 
 def fib(n):
@@ -53,7 +55,7 @@ identify_vowel('u')
 """Exercise 2.6"""
 
 #function: translate(str)
-
+## The else is not at the propoer level and doesn't work as you might expect
 def translate(str):
     consonant = 'bcdfghjklmnpqrstvwxz'
     ret_str = ''
@@ -70,23 +72,23 @@ translate('this is fun')
 #function: sum(list)
 
 def sum(list):
-    list = [7,8,9]
+    #list = [7,8,9] ## This should not have been initialized in the function
     sum=0
     for num in list:
         sum = sum + num
     return(sum)
 
-sum(list)
+#sum(list)
 
 #function: multiply(list)
 
 def multiply(list):
-    list = [7,8,9]
+    ##list = [7,8,9] ## This should not have been initialized in the function
     product = 1
     for x in list:
         product *= x
     return product
-multiply(list)
+#multiply(list)
 
 """Exercise 2.8"""
 
@@ -112,16 +114,16 @@ is_palindrome('radar')
 """Exercise 2.10"""
 
 #function: is_member()
-
-def is_member(value):
-    a = ['c','5','N','street']
-    for str in a:
-        if value == str:
-            return True
-    else:
-        return False
-        
-is_member('motorcycle')
+## This function should have two parameters
+# def is_member(value):
+#     a = ['c','5','N','street']
+#     for str in a:
+#         if value == str:
+#             return True
+#     else:
+#         return False
+#
+# is_member('motorcycle')
 
 """Exercise 2.11"""
 
@@ -148,3 +150,62 @@ def generate_n_chars(num, str):
     return(generated_string)
     
 generate_n_chars(6,'u')
+
+print('\n#1\n')
+fib(500)
+print('\n')
+
+print('#2\n')
+print(mymax(45,987), '\n')
+
+print('#3\n')
+print(max_of_three(3,4,5),'\n')
+
+print('#4\n')
+print(mylen('Gerhard'))
+print(mylen([1,2,3,4,5,6,7]))
+print('\n')
+
+print('#5\n')
+print(identify_vowel('e'))
+print(identify_vowel('H'))
+print('\n')
+
+print('#6\n')
+print(translate("this is fun"))
+print(translate('aeiou'))
+print(translate('YYYYYYY'))
+print(translate("mmmmmm"))
+print('\n')
+
+print('#7\n')
+print(sum([1,2,3,4,5]))
+print('\n')
+
+print('#8\n')
+print(multiply([0,1,2,3]))
+print(multiply([1,2,3,4]))
+print('\n')
+
+print('#9\n')
+print(reverse("gnitset ma I"))
+print('\n')
+
+print('#10\n')
+print(is_palindrome('radar'))
+print(is_palindrome('Gerhard'))
+print('\n')
+
+print('#11\n')
+# print(is_member('dog', ['cat', 'dog', 'zebra']))
+# print(is_member(3, [1,2,3,4]))
+# print(is_member(3, [5,6,7]))
+print('\n')
+
+print('#12\n')
+print(overlapping([1,2,3], [3,4,5]))
+print(overlapping([1,2,3], [6,4,5]))
+print('\n')
+
+print('#13\n')
+print(generate_n_chars(7, 'g'))
